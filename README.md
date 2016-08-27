@@ -13,7 +13,7 @@ It is useful when you want to check what values can be between workbench/classic
 ## Pre-reqs
 
 * Developer Office 365 tenant
-* Folled the instructions for getting started with SPFx here: [https://github.com/SharePoint/sp-dev-docs/wiki/Setup-SharePoint-Tenant](https://github.com/SharePoint/sp-dev-docs/wiki/Setup-SharePoint-Tenant)
+* Followed the instructions for getting started with SPFx here: [https://github.com/SharePoint/sp-dev-docs/wiki/Setup-SharePoint-Tenant](https://github.com/SharePoint/sp-dev-docs/wiki/Setup-SharePoint-Tenant)
 
 ## Hosted in workbench
 
