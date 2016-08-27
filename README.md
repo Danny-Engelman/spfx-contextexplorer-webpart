@@ -1,30 +1,24 @@
-<<<<<<< HEAD
-## sp-fx-context-explorer-web-part
-
-This is where you include your web part docs.
-
-### Building the code
-
-```bash
-git clone the repo
-npm i
-npm i -g gulp
-gulp
-```
-
-This package produces the following:
-
-* lib/* commonjs components - this allows this package to be reused from other packages.
-* dist/* - a single bundle containing the components used for uploading to a cdn pointing a registered Sharepoint webpart library to.
-* example/* a test page that hosts all components in this package.
-
-### Build options
-
-gulp nuke - TODO
-gulp test - TODO
-gulp watch - TODO
-gulp build - TODO
-gulp deploy - TODO
-=======
 # spfx-contextexplorer-webpart
->>>>>>> c0c60814e2689a760f76179ccfa02ad1a773d9bc
+
+Wes Hackett - SPFx Context Explorer
+
+## Overview
+
+The SharePoint Framework (SPFx) comes with a context object. This web part example displays the various properties from that object.
+
+It is useful when you want to check what values can be between workbench/classic/SharePoint pages to help you build the correct logic into the web part.
+
+![Web Part](./assets/SPHosted.png)
+
+## Pre-reqs
+
+* Developer Office 365 tenant
+* Folled the instructions for getting started with SPFx here: [https://github.com/SharePoint/sp-dev-docs/wiki/Setup-SharePoint-Tenant](https://github.com/SharePoint/sp-dev-docs/wiki/Setup-SharePoint-Tenant)
+
+## Hosted in workbench
+
+![Web Part](./assets/WBHosted.png)
+
+## Hosted in SharePoint Online workbench
+
+![Web Part](./assets/SPHosted.png)
