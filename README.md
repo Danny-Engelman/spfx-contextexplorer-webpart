@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ## sp-fx-context-explorer-web-part
 
 This is where you include your web part docs.
@@ -24,3 +25,6 @@ gulp test - TODO
 gulp watch - TODO
 gulp build - TODO
 gulp deploy - TODO
+=======
+# spfx-contextexplorer-webpart
+>>>>>>> c0c60814e2689a760f76179ccfa02ad1a773d9bc
