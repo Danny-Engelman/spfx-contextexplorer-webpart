@@ -115,44 +115,27 @@ export default class SpfxContextExplorerWebPartWebPart extends BaseClientSideWeb
       </div>`;
   }
 
-  private _getEnvironmentTypeName() : string {
-
-    let value: string;
-    switch (this.context.environment.type) {
-      case EnvironmentType.ClassicSharePoint:
-        value = 'ClassicSharePoint';
-        break;
-      case EnvironmentType.Local:
-        value = 'Local';
-        break;
-      case EnvironmentType.SharePoint:
-        value = 'SharePoint';
-        break;
-      case EnvironmentType.Test:
-        value = 'Test';
-        break;
-      default:
-        value = 'Unknown';
-        break;
+    private _getEnvironmentTypeName() : string {
+        switch (this.context.environment.type) {
+            case EnvironmentType.ClassicSharePoint:
+                return 'ClassicSharePoint';
+            case EnvironmentType.Local:
+                return 'Local';
+            case EnvironmentType.SharePoint:
+                return 'SharePoint';
+            case EnvironmentType.Test:
+                return 'Test';
+            default:
+                return 'Unknown';
+        }
     }
 
-    return value;
-  }
-
-  private _getManifestProperties() : string {
-    let props: string;
-    props = '<ul>';
-
-    for (var index = 0; index < this.context.manifest.properties.length; index++) {
-      var element = this.context.manifest.properties[index];
-      props = props + '<li>' + element + '</li>';
+    private _getManifestProperties(): string {
+        return '<ul>' + this.context.manifest.properties.map((element) => {
+                return '<li>' + element + '</li>';
+            }).join('') + '</ul>';
     }
 
-
-    props = props + '</ul>';
-
-    return props;
-  }
 
   protected get propertyPaneSettings(): IPropertyPaneSettings {
     return {
